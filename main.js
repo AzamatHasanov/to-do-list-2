@@ -10,7 +10,6 @@ function addToDo() {
   li.innerHTML = `<div class="mainflx">
   <li>${todoValues}</li>
     <span class="delete">✖</span></div>`;
-
   li.addEventListener("click", function () {
     this.classList.toggle("completed");
   });
