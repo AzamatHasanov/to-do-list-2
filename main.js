@@ -13,9 +13,18 @@ function addToDo() {
   li.addEventListener("click", function () {
     this.classList.toggle("completed");
   });
-
+// news
+  li.querySelector(".delete").addEventListener("click", function (e) {
+    e.stopPropagation(); 
+    li.remove();
+  });
   list.appendChild(li);
   todo.value = "";
 }
 add.addEventListener("click", addToDo);
 
+// new
+
+input.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") addTodo();
+  });
