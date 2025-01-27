@@ -18,3 +18,4 @@ function addToDo() {
   todo.value = "";
 }
 add.addEventListener("click", addToDo);
+
