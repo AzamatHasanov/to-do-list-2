@@ -13,9 +13,9 @@ function addToDo() {
   li.addEventListener("click", function () {
     this.classList.toggle("completed");
   });
-// news
+  // news
   li.querySelector(".delete").addEventListener("click", function (e) {
-    e.stopPropagation(); 
+    e.stopPropagation();
     li.remove();
   });
   list.appendChild(li);
@@ -26,5 +26,5 @@ add.addEventListener("click", addToDo);
 // new
 
 input.addEventListener("keypress", function (e) {
-    if (e.key === "Enter") addTodo();
-  });
+  if (e.key === "Enter") addToDo();
+});
